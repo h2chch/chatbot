@@ -5,15 +5,16 @@ import nltk
 from nltk.chat.util import Chat, reflections
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
-nltk_data_path = join(dirname(__file__), "nltk_data")
+cwd = dirname(__file__)
+nltk_data_path = join(cwd, "nltk_data")
 nltk.data.path.append(nltk_data_path)
 
-reflections_path = join(dirname(__file__), "reflections.json")
+reflections_path = join(cwd, "reflections.json")
 reflections = []
 with open(reflections_path, 'r') as file:
     pairs = json.load(file)
 
-pairs_path = join(dirname(__file__), "pairs.json")
+pairs_path = join(cwd, "pairs.json")
 pairs = []
 with open(pairs_path, 'r') as file:
     pairs = json.load(file)
