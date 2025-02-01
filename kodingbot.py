@@ -72,15 +72,18 @@ def stem(str):
 
 def init():
     global intent_patterns, intent_answers, intent_images, intent_helps
-    intent_patterns = read_intent_patterns("intent_patterns.json")
-    intent_answers = read_intent("intent_answers.json")
-    intent_images = read_intent("intent_images.json")
-    intent_helps = read_intent("intent_helps.json")
+    if not intent_patterns:
+        intent_patterns = read_intent_patterns("intent_patterns.json")
+    if not intent_answers:
+        intent_answers = read_intent("intent_answers.json")
+    if not intent_images:
+        intent_images = read_intent("intent_images.json")
+    if not intent_helps:
+        intent_helps = read_intent("intent_helps.json")
 
 
 def chat(keyword):
-    if not intent_patterns or not intent_answers or intent_images or intent_helps:
-        init()
+    init()
     keyword = stem(keyword)
     match_intents = get_match_intents(keyword, intent_patterns)
     match_results = get_match_results(match_intents, intent_answers, intent_images, intent_helps)
