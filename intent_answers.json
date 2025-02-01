@@ -1,0 +1,22 @@
+[
+    [
+        "general-salam",
+        ["salam", "halo"]
+    ],
+    [
+        "general-kabar",
+        ["Baik, terimakasih", "OK"]
+    ],
+    [
+        "control-fungsi",
+        ["kondisi digunakan untuk menganalisa suatu nilai boolean", "control kondisi sama seperti pernyataan jika/if untuk menganalisa nilai boolean"]
+    ],
+    [
+        "control-jenis",
+        ["ada 3 jenis dari kondisi", "test"]
+    ],
+    [
+        "block-fungsi",
+        ["block fungsi", "test"]
+    ]
+]

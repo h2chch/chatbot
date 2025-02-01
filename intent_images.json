@@ -1,0 +1,10 @@
+[
+    [
+        "control-fungsi",
+        ["control/gambar1.png", "control/gambar2.png"]
+    ],
+    [
+        "control-jenis",
+        ["control/gambar3.png", "control/gambar4.png", "control/gambar5.png"]
+    ]
+]

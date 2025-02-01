@@ -1,0 +1,34 @@
+[
+    [
+        "general-salam",
+        [
+            "\b(hai|halo|hi|hello|salam)\b"
+        ]
+    ],
+    [
+        "general-kabar",
+        [
+            "(.*)(kabar|keadaan)\b"
+        ]
+    ],
+    [
+        "control-fungsi",
+        [
+            "\b(?=.*\b(fungsi|guna|buat|apa)\b)(?=.*\b(if|kondisi)\b)\b",            
+            "(.*)(?=.*\b(manfaat)\b)(?=.*\b(if|kondisi)\b)\b"            
+        ]
+    ],
+    [
+        "control-jenis",
+        [
+            "(.*)(?=.*\b(banyak|jumlah|jenis)\b)(?=.*\b(if|kondisi)\b)\b",
+            "(.*)(?=.*\b(macam)\b)(?=.*\b(if|kondisi)\b)\b"
+        ]
+    ],
+    [
+        "block-fungsi",
+        [
+            "(.*)(?=.*\b(fungsi|guna|buat|apa)\b)(?=.*\b(block|blok)\b)\b"
+        ]
+    ]
+]
