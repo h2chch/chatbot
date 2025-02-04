@@ -5,6 +5,6 @@
     ],
     [
         "control-jenis",
-        ["help/control/repeat.png", "help/control/wait.png", "forever.png"]
+        ["help/control/repeat.png", "help/control/wait.png", "help/control/forever.png"]
     ]
 ]
