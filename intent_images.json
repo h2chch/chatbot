@@ -1,10 +1,10 @@
 [
     [
         "control-fungsi",
-        ["help/control/if.jpg", "help/control/if-else.jpg"]
+        ["help/control/if.png", "help/control/if-else.png"]
     ],
     [
         "control-jenis",
-        ["help/control/image.png", "help/control/image-1.png", "help/control/repeat.jpg"]
+        ["help/control/repeat.png", "help/control/wait.png", "forever.png"]
     ]
 ]
