@@ -1,7 +1,7 @@
 {
-    "coding": "coding/index.md",
-    "motion": "motion/index.md",
-    "control-fungsi": "control/index.md",
-    "control-jenis": "control/index.md",
-    "block-fungsi": "block/index.md"
+    "coding": "help/coding/index.md",
+    "motion": "help/motion/index.md",
+    "control-fungsi": "help/control/index.md",
+    "control-jenis": "help/control/index.md",
+    "block-fungsi": "help/myblock/index.md"
 }
