@@ -43,11 +43,11 @@ def read_intent_patterns(file_path):
 
 def get_match_intents(keyword, intent_patterns):
     match_intents = set()
-    for intent, patterns in intent_patterns:
-        for pattern in patterns:
+    for item in intent_patterns:
+        for pattern in item["patterns"]:
             match = re.match(pattern, keyword)
             if match:
-                match_intents.add(intent)
+                match_intents.add(item["intent"])
                 break
     return match_intents
 
@@ -58,13 +58,13 @@ def get_match_results(match_intents, intent_answers, intent_images, intent_helps
         match = {}
         match["intent"] = match_intent
         
-        for intent, answers in intent_answers:
-            if (intent == match_intent):
-                match["answers"] = random.choice(answers)
+        for item in intent_answers:
+            if (item["intent"] == match_intent):
+                match["answers"] = random.choice(item["answers"])
 
-        for intent, images in intent_images:
-            if (intent == match_intent):
-                match["images"] = [get_absolute_path(cwd, image) for image in images]    
+        for item in intent_images:
+            if (item["intent"] == match_intent):
+                match["images"] = [get_absolute_path(cwd, image) for image in item["images"]]    
 
         match_help = intent_helps.get(match_intent)
         if match_help:

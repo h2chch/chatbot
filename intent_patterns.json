@@ -1,34 +1,34 @@
 [
-    [
-        "general-salam",
-        [
+    {
+        "intent": "general-salam",
+        "patterns": [
             "\b(hai|halo|hi|hello|salam)\b"
         ]
-    ],
-    [
-        "general-kabar",
-        [
+    },
+    {
+        "intent": "general-kabar",
+        "patterns": [
             "(.*)(kabar|keadaan)\b"
         ]
-    ],
-    [
-        "control-fungsi",
-        [
+    },
+    {
+        "intent": "control-fungsi",
+        "patterns": [
             "\b(?=.*\b(fungsi|guna|buat|apa)\b)(?=.*\b(if|kondisi)\b)\b",            
             "(.*)(?=.*\b(manfaat)\b)(?=.*\b(if|kondisi)\b)\b"            
         ]
-    ],
-    [
-        "control-jenis",
-        [
+    },
+    {
+        "intent": "control-jenis",
+        "patterns": [
             "(.*)(?=.*\b(banyak|jumlah|jenis)\b)(?=.*\b(if|kondisi)\b)\b",
             "(.*)(?=.*\b(macam)\b)(?=.*\b(if|kondisi)\b)\b"
         ]
-    ],
-    [
-        "block-fungsi",
-        [
+    },
+    {
+        "intent": "block-fungsi",
+        "patterns": [
             "(.*)(?=.*\b(fungsi|guna|buat|apa)\b)(?=.*\b(block|blok)\b)\b"
         ]
-    ]
+    }
 ]

@@ -1,10 +1,10 @@
 [
-    [
-        "control-fungsi",
-        ["help/control/if.png", "help/control/if-else.png"]
-    ],
-    [
-        "control-jenis",
-        ["help/control/repeat.png", "help/control/wait.png", "help/control/forever.png"]
-    ]
+    {
+        "intent": "control-fungsi",
+        "images": ["help/control/if.png", "help/control/if-else.png"]
+    },
+    {
+        "intent": "control-jenis",
+        "images": ["help/control/repeat.png", "help/control/wait.png", "help/control/forever.png"]
+    }
 ]
