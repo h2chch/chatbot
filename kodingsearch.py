@@ -18,9 +18,9 @@ def get_cwd():
 def get_absolute_path(cwd, file_path):
     absolute_path = ""
     if (sys.platform.startswith("win")):
-        absolute_path = file_path.replace("/", "\\")
+        absolute_path = file_path.replace("/", "\\") + "\\"
     else:
-        absolute_path = file_path.replace("\\", "/")
+        absolute_path = file_path.replace("\\", "/") + "/"
     absolute_path = join(cwd, absolute_path)
     return absolute_path
 
@@ -79,3 +79,21 @@ def search(keyword):
     markdown_paths = get_markdown_paths(get_absolute_path(get_cwd(),"help"))
     search_result = [result for result in parse_markdowns(markdown_paths, regex) if result["excerpts"]]
     return search_result
+
+
+def replace_markdown(markdown_path, new_path):
+    with open(markdown_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+
+    pattern = r'(!\[.*?\]\()(.*?)(\))'
+
+    def replace_path(match):
+        return f"{match.group(1)}{new_path}{match.group(2).split('/')[-1]}{match.group(3)}"
+
+    new_content = re.sub(pattern, replace_path, content)
+    return new_content
+
+def markdown(markdown_path):
+    help_path = get_absolute_path(get_cwd(),"help")
+    new_markdown = replace_markdown(markdown_path, help_path)
+    return new_markdown
