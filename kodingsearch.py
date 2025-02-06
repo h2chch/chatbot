@@ -95,5 +95,9 @@ def replace_markdown(markdown_path, new_path):
 
 def markdown(markdown_path):
     help_path = dirname(markdown_path)
+    if (sys.platform.startswith("win")):
+        help_path = help_path + "\\"
+    else:
+        help_path = help_path + "/"
     new_markdown = replace_markdown(markdown_path, help_path)
     return new_markdown
