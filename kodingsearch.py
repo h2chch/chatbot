@@ -94,6 +94,6 @@ def replace_markdown(markdown_path, new_path):
     return new_content
 
 def markdown(markdown_path):
-    help_path = get_absolute_path(get_cwd(),"help")
+    help_path = dirname(markdown_path)
     new_markdown = replace_markdown(markdown_path, help_path)
     return new_markdown
