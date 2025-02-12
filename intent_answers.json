@@ -17,6 +17,38 @@
     },
     {
         "intent": "block-fungsi",
-        "answers": ["block fungsi", "test"]
+        "answers": ["Block dalam scratch adalah pengganti bahasa pemrograman. Block-block ini memiliki warna yang berbeda. Warna tersebut menunjukkan fungsi atau perintah yang berbeda pula"]
+    },
+    {
+        "intent": "block-susun",
+        "answers": ["Cara kerjanya dengan di seret dan di jatuhkan (drag and drop) pada ruang kerja scratch","Cara menyusun dari atas ke bawah seperti cara pengkodean pada bahasa pemrograman."]
+    },
+    {
+        "intent": "coding-kuis",
+        "answers": ["Ambil block sensing :  ask…-and-wait. Ambil block control : if-else , isi dengan operator answer = Yes/Y dan definisikan perintah dalam block if-else tersebut"]
+    },
+    {
+        "intent": "sound-isi",
+        "answers": ["Cara mengisi suara : Klik objek yang akan di beri suara. Klik block-sound. Pilih block-play-sound atau start-sound. Klik model input sound (recoding, upload, atau asset)"]
+    },
+    {
+        "intent": "sound-tepat",
+        "answers": ["Agar sound tepat dan bersamaan dengan animasi yang berlangsung : pilih block-start-sound letakkan diatas blok animasi yang di lakukan"]
+    },
+    {
+        "intent": "sound-lama",
+        "answers": ["sound bisa dimainkan lebih lama dan panjang : Gunakan block-repeat isi dengan block-start-sound Atau pilih block-forever isi dengan block-play-sound-until-done"]
+    },
+    {
+        "intent": "sound-volume",
+        "answers": ["Klik objek yang memiliki suara, lalu klik tab-bar-sound yang terletak dibagian kiri atas (code-costume-sound). Pilih Louder-Softer untuk menaikkan dan menurunkan volume sound", "Ambil blok change-volume-by atau set-volume-to. Letakkan block tersebut sebelum block play-sound atau start-sound"]
+    },
+    {
+        "intent": "motion-gerak",
+        "answers": ["Gunakan blok-move (+) ke kanan, (-) ke kiri isi dengan angka menunjukkan jumlah gerakan", "Gunakan Blok-go-to-XY untuk menuju koordinat tertentu. Gerakan ini dilakukan dengan sangat cepat tanpa animasi perpindahan objeknya. Jadi langsung muncul di tempat tujuan"]
+    },
+    {
+        "intent": "motion-kecepatan",
+        "answers": ["Gunakan block-repeat, isi dengan block-move atau block-change-X (hanya perubahan nilai X) atau block change-Y (hanya perubahan nilai Y). Isi dengan angka rendah agar perubahannya pelan dan halus.", "Gunakan block-glide-secs-to-XY untuk gerak menuju koordinat XY yang baru.Isi dengan angka rendah agar perubahannya pelan dan halus"]
     }
 ]

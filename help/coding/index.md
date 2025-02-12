@@ -1,5 +1,7 @@
-## Gerak 
-#### gerak lingkaran tanpa jarak
+# Contoh Kode 
+## Gerak lingkaran tanpa jarak
 ![](gerak-lingkar.png)
-#### gerak lingkaran dengan jarak
+## Gerak lingkaran dengan jarak
 ![](gerak-lingkar-jarak.png)
+## Kuis dengan jawaban Yes / No
+![](kuis-yesno.png)

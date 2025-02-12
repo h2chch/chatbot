@@ -79,16 +79,16 @@ def stem(str):
     str_clean = stemmer.stem(str) 
     return str_clean
 
-def init():
+def init(force=False):
     cwd = get_cwd()
     global intent_patterns, intent_answers, intent_images, intent_helps
-    if not intent_patterns:
+    if force or not intent_patterns:
         intent_patterns = read_intent_patterns(get_absolute_path(cwd,"intent_patterns.json"))
-    if not intent_answers:
+    if force or not intent_answers:
         intent_answers = read_intent(get_absolute_path(cwd, "intent_answers.json"))
-    if not intent_images:
+    if force or not intent_images:
         intent_images = read_intent(get_absolute_path(cwd, "intent_images.json"))
-    if not intent_helps:
+    if force or not intent_helps:
         intent_helps = read_intent(get_absolute_path(cwd, "intent_helps.json"))
 
 

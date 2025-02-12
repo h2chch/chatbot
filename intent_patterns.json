@@ -21,14 +21,57 @@
     {
         "intent": "control-jenis",
         "patterns": [
-            "(.*)(?=.*\b(banyak|jumlah|jenis)\b)(?=.*\b(if|kondisi)\b)\b",
-            "(.*)(?=.*\b(macam)\b)(?=.*\b(if|kondisi)\b)\b"
+            "(.*)(?=.*\b(banyak|jumlah|apa|berapa)\b)(?=.*\b(if|kondisi)\b)\b",
+            "(.*)(?=.*\b(macam|jenis)\b)(?=.*\b(if|kondisi)\b)\b"
         ]
     },
     {
         "intent": "block-fungsi",
         "patterns": [
-            "(.*)(?=.*\b(fungsi|guna|buat|apa)\b)(?=.*\b(block|blok)\b)\b"
+            "(.*)(?=.*\b(fungsi|guna|buat)\b)(?=.*\b(block|blok)\b)\b"
+        ]
+    },
+    {
+        "intent": "block-susun",
+        "patterns": [
+            "(.*)(?=.*\b(susun|rangkai|hubung)\b)(?=.*\b(block|blok)\b)\b"
+        ]
+    },
+    {
+        "intent": "coding-quiz",
+        "patterns": [
+            "(.*)(?=.*\b(buat|bagaimana|quiz|kuis)\b)(?=.*\b(code|coding|kode|koding)\b)\b"
+        ]
+    },
+    {
+        "intent": "sound-isi",
+        "patterns": [
+            "(.*)(?=.*\b(cara|bagaimana|isi|input|upload)\b)(?=.*\b(sound|suara|musik)\b)\b"
+        ]
+    },
+    {
+        "intent": "sound-tepat",
+        "patterns": [
+            "(.*)(?=.*\b(cara|bagaimana|agar|supaya|tepat|pas|animasi)\b)(?=.*\b(sound|suara|musik)\b)\b"
+        ]
+    },
+    {
+        "intent": "sound-lama",
+        "patterns": [
+            "(.*)(?=.*\b(cara|bagaimana|agar|supaya|lama|panjang)\b)(?=.*\b(sound|suara|musik)\b)\b"
+        ]
+    },
+    {
+        "intent": "sound-volume",
+        "patterns": [
+            "(.*)(?=.*\b(cara|bagaimana|agar|ubah|volume|keras|lemah|lirih|naik|turun)\b)(?=.*\b(sound|suara|musik)\b)\b"
+        ]
+    },
+    {
+        "intent": "motion-kecepatan",
+        "patterns": [
+            "(.*)(?=.*\b(cara|bagaimana|atur|tentu|arah|kecepatan|halus|mulus|tertentu|otomatis)\b)(?=.*\b(motion|gerak|move|langkah)\b)\b"
         ]
     }
+
 ]
