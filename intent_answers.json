@@ -28,6 +28,10 @@
         "answers": ["Ambil block sensing :  ask…-and-wait. Ambil block control : if-else , isi dengan operator answer = Yes/Y dan definisikan perintah dalam block if-else tersebut"]
     },
     {
+        "intent": "coding-lingkar",
+        "answers": ["Ambil blok forever, isi dengan turn dan atur derajat untuk menunjukkan kecepatan berputar dan tambahkan move dalam block forever untuk menentukan jari-jari"]
+    },
+    {
         "intent": "sound-isi",
         "answers": ["Cara mengisi suara : Klik objek yang akan di beri suara. Klik block-sound. Pilih block-play-sound atau start-sound. Klik model input sound (recoding, upload, atau asset)"]
     },
@@ -45,7 +49,7 @@
     },
     {
         "intent": "motion-gerak",
-        "answers": ["Gunakan blok-move (+) ke kanan, (-) ke kiri isi dengan angka menunjukkan jumlah gerakan", "Gunakan Blok-go-to-XY untuk menuju koordinat tertentu. Gerakan ini dilakukan dengan sangat cepat tanpa animasi perpindahan objeknya. Jadi langsung muncul di tempat tujuan"]
+        "answers": ["Gunakan blok-move (+) ke kanan, (-) ke kiri isi dengan angka menunjukkan jumlah gerakan", "Gunakan Blok-go-to-XY untuk menuju koordinat tertentu. Gerakan ini dilakukan dengan sangat cepat tanpa animasi perpindahan objeknya. Jadi langsung muncul di tempat tujuan","Ambil blok forever, isi dengan turn dan atur derajat untuk menunjukkan kecepatan berputar dan tambahkan move dalam block forever untuk menentukan jari-jari"]
     },
     {
         "intent": "motion-kecepatan",

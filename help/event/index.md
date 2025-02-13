@@ -1,18 +1,19 @@
+# Event
 ## when green flag klicked
-#### perintah di jalankan ketika green flag di klik
+Perintah di jalankan ketika green flag di klik
 ![](green-flag.png)
 ## when ... key pressed
-#### melakukan perintah ketika ... ditekan
+Melakukan perintah ketika ... ditekan
 ![](when-key-pressed.png)
-## when this sprite clicked
-#### sprite melakukan perintah jika di klik
+## When this sprite clicked
+Sprite melakukan perintah jika di klik
 ![](when-this-sprite-clicked.png)
-## when backdrop switches to ...
-#### perintah di lakukan ketika ganti backdrop
+## When backdrop switches to ...
+Perintah di lakukan ketika ganti backdrop
 ![](when-backdrop-switches.png)
-## broadcast 
-#### membuat perintah dengan pesan panggilan
+## Broadcast 
+Membuat perintah dengan pesan panggilan
 ![](broadcast.png)
-## when i receive
-#### perintah  saat menerima pesan panggilan
+## When i receive
+Perintah  saat menerima pesan panggilan
 ![](when-i-receive.png)

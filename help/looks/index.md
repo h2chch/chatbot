@@ -1,21 +1,22 @@
-## say ... for ... second
-#### perintah menampilkan tulisan dengan batasan waktu lalu tulisan menghilang
+# Looks
+## Say ... for ... second
+Perintah menampilkan tulisan dengan batasan waktu lalu tulisan menghilang
 ![](say-for.png)
-#### perintah menampilkan tulisan dengan batasan waktu dan suara
+Perintah menampilkan tulisan dengan batasan waktu dan suara
 ![](say-for-sound.png)
-## say ...
-#### perintah menampilkan tulisan 
+## Say ...
+Perintah menampilkan tulisan 
 ![](say.png)
-## think ... for ... second
-#### perintah menampilkan tulisan (kotak tulisan berfikir) dengan batasan waktu lalu tulisan menghilang
+## Think ... for ... second
+Perintah menampilkan tulisan (kotak tulisan berfikir) dengan batasan waktu lalu tulisan menghilang
 ![](think-for.png)
-## think ...
-#### perintah menampilkan tulisan (kotak tulisan berfikir) 
+## Think ...
+Perintah menampilkan tulisan (kotak tulisan berfikir) 
 ![](think.png)
-## switch costum
-#### perintah berganti gambar dalam 1 sprite
+## Switch costum
+Perintah berganti gambar dalam 1 sprite
 ![](switch-costum.png)
-## next costum
-#### perintah berganti gambar secara urut dalam 1 sprite
+## Next costum
+Perintah berganti gambar secara urut dalam 1 sprite
 ![](next-costum.png)
 

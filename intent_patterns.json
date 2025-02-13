@@ -44,6 +44,12 @@
         ]
     },
     {
+        "intent": "coding-lingkar",
+        "patterns": [
+            "(.*)(?=.*\b(cara|bagaimana|atur|lingkar|putar|sprite|gerak|jari|jarak)\b)(?=.*\b(code|coding|kode|koding)\b)\b"
+        ]
+    },
+    {
         "intent": "sound-isi",
         "patterns": [
             "(.*)(?=.*\b(cara|bagaimana|isi|input|upload)\b)(?=.*\b(sound|suara|musik)\b)\b"
@@ -72,6 +78,14 @@
         "patterns": [
             "(.*)(?=.*\b(cara|bagaimana|atur|tentu|arah|kecepatan|halus|mulus|tertentu|otomatis)\b)(?=.*\b(motion|gerak|move|langkah)\b)\b"
         ]
+    },
+    {
+        "intent": "motion-gerak",
+        "patterns": [
+            "(.*)(?=.*\b(cara|bagaimana|atur|tentu|arah|sprite)\b)(?=.*\b(motion|gerak|move|langkah)\b)\b"
+        ]
     }
+    
+
 
 ]
