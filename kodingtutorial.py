@@ -2,7 +2,25 @@ from mistletoe import Document, ast_renderer
 from itertools import groupby
 import os
 from os.path import dirname, join
+import sys
 
+def get_cwd():
+    try:
+        __file__
+    except:
+        root = os.getcwd()
+    else:
+        root = dirname(__file__) 
+    return root
+
+def get_absolute_path(cwd, file_path):
+    absolute_path = ""
+    if (sys.platform.startswith("win")):
+        absolute_path = file_path.replace("/", "\\") + "\\"
+    else:
+        absolute_path = file_path.replace("\\", "/") + "/"
+    absolute_path = join(cwd, absolute_path)
+    return absolute_path
 
 def get_markdown_files(tutorial_path):
     for root, dirs, files in os.walk(tutorial_path, followlinks=True, topdown=True):
@@ -24,8 +42,8 @@ def get_markdown_title(markdown_path):
                         content = child2["content"] 
                         return content
 
-def tutorials(tutorial_path):
-    result = []
+def get_tutorials(tutorial_path):
+    tutorials = []
     for key, group in groupby(get_markdown_files(tutorial_path), lambda x: dirname(x)):
         tutorial = {}
         tutorial_files = []
@@ -40,6 +58,10 @@ def tutorials(tutorial_path):
                 tutorial_files.append(file)
 
         tutorial["files"] = tutorial_files    
-        result.append(tutorial)
+        tutorials.append(tutorial)
 
+    return tutorials
+
+def tutorials():
+    result = get_tutorials(get_absolute_path(get_cwd(),"tutorial"))
     return result
